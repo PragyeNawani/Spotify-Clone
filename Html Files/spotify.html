@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="../Css Files/dutility.css">
+    <link rel="stylesheet" href="../Css Files/dspotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left  bg-black">
+            <div class="home bg-grey m-1 rounded">
+                <div class="logo invert"><img src="../Svg Files/logo.svg" alt="Logo"><img class="close"
+                        src="../Svg Files/close.svg" alt=""></div>
+                <ul>
+                    <li id="lihome"><img id="homem" src="../Svg Files/home.svg" alt="Home" class="invert">Home</li>
+                    <li id="lisearch"><img id="search" src="../Svg Files/search.svg" alt="Search" class="invert">Search
+                    </li>
+                </ul>
+            </div>
+            <div class="lib bg-grey2 m-1 rounded">
+                <div class="libhead">
+                    <div class="libhleft">
+                        <div class="libhlogo">
+                            <img src="../Svg Files/lib.svg" alt="Your Logo">
+                        </div>
+                        <div class="libhhead">
+                            Your Library
+                        </div>
+                    </div>
+                    <div class="libhright">
+                        <img src="../Svg Files/plus.svg" alt="Plus">
+                    </div>
+                </div>
+                <div class="songslist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                                Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                            target="__blank"><span>Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-main rounded m-1">
+            <div class="header bg-grey">
+                <div class="nav">
+                    <img class="invert hamburger" src="../Svg Files/ham.svg" alt="">
+                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="buttons">
+                    <button>Sign Up</button>
+                    <button class="Loginbutton">Login</button>
+                </div>
+            </div>
+            <div class="rightbody">
+                <div class="artists">
+                    <div class="artistshead">
+                        <h1>Popular Artists</h1>
+                        <span>Show all</span>
+                    </div>
+                    <div class="artistscardcon">
+                    </div>
+                </div>
+                <div class="spotifyplaylist">
+                    <h1>Popular Albums</h1>
+                    <div class="playlistcardcon">
+                        <div data-folder="ashiqui2" class="playlistcard">
+                            <div class="aplaycon">
+                                <div class="aplayhover"><i class="fa fa-play"></i></div>
+                            </div>
+                            <img src="../Albums Pfp/Ashique 2.jpg" alt="">
+                            <h2>Ashiqui 2</h2>
+                            <p><a href="#">Mithoon</a>,&nbsp;<a href="#">Ankit Tiwari</a>,&nbsp;<a href="#">Jeet
+                                    Gannguli</a></p>
+                        </div>
+                        <div data-folder="moosetape" class="playlistcard">
+                            <div class="aplaycon">
+                                <div class="aplayhover"><i class="fa fa-play"></i></div>
+                            </div>
+                            <img src="../Albums Pfp/Moosetape.jpg" alt="">
+                            <h2>Moosetape</h2>
+                            <p><a href="#">Sidhu Moose Wala</a></p>
+                        </div>
+                        <div data-folder="shubh" class="playlistcard">
+                            <div class="aplaycon">
+                                <div class="aplayhover"><i class="fa fa-play"></i></div>
+                            </div>
+                            <img src="../Albums Pfp/Shubh.jpg" alt="">
+                            <h2>Still Rolling</h2>
+                            <p><a href="#">Shubh</a></p>
+                        </div>
+                        <div data-folder="karan" class="playlistcard">
+                            <div class="aplaycon">
+                                <div class="aplayhover"><i class="fa fa-play"></i></div>
+                            </div>
+                            <img src="../Albums Pfp/Karan.jpg" alt="">
+                            <h2>Making Memories</h2>
+                            <p><a href="#">Karan Aujila</a>,&nbsp;<a href="#">Ikky</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img id="Previous" src="../Svg Files/previous.svg" alt="">
+                            <img id="Play" src="../Svg Files/play.svg" alt="">
+                            <img id="Next" src="../Svg Files/next.svg" alt="">
+                        </div>
+                        <div class="songbarright">
+
+                            <div class="songtime">
+                                
+                            </div>
+                            <div class="volume">
+                                <img id="vol" onclick="toggleinp()" src="../Svg Files/volumeon.svg" alt="">
+                                <input id="volinp" type="range" name="volume" value="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript Files/script.js"></script>
+</body>
+
+</html>
